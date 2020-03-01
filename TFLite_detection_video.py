@@ -53,10 +53,10 @@ if pkg is None:
     from tflite_runtime.interpreter import Interpreter
     if use_TPU:
         from tflite_runtime.interpreter import load_delegate
-else:
-    from tensorflow.lite.python.interpreter import Interpreter
-    if use_TPU:
-        from tensorflow.lite.python.interpreter import load_delegate
+#else:
+#    from tensorflow.lite.python.interpreter import Interpreter
+#    if use_TPU:
+#        from tensorflow.lite.python.interpreter import load_delegate
 
 # If using Edge TPU, assign filename for Edge TPU model
 if use_TPU:
